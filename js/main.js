@@ -3,11 +3,31 @@
 //llamando con ".js-list " a todo lo esta envuelto en esta clase EN html DESDE js.
 
 const catlist = document.querySelector(".js-list");
-const input_search_desc = document.querySelector(".js_in_search_desc");
+
+const input_search_desc = document.querySelector('.js_in_search_desc');
+
 const descrSearchText = input_search_desc.value;
 
-console.log(descrSearchText.value);
-console.log()
+if( htmlKitten_1.includes(descrSearchText) ) {
+    
+    const kitten_1_desc  = `1 Porte elegante, su patrón de color tan característico y sus ojos
+    de un azul intenso, pero su historia se remonta a Asía al menos
+    hace 500 años, donde tuvo su origen muy posiblemente.`;
+     
+    
+    //Completa el código
+    }
+    
+
+    if( htmlKitten_2.includes(descrSearchText) ) {
+    //Completa el código
+    }
+    
+    if(htmlKitten_3 .includes(descrSearchText) ) {
+    //Completa el código
+    }
+    
+
 
 
 
