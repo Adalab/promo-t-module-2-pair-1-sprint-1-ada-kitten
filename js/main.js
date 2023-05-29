@@ -5,28 +5,38 @@
 const catlist = document.querySelector(".js-list");
 
 const input_search_desc = document.querySelector('.js_in_search_desc');
+const btnBuscar = document.querySelector(`.js_button`)
 
-const descrSearchText = input_search_desc.value;
+ 
 
-if( htmlKitten_1.includes(descrSearchText) ) {
+console.log(input_search_desc.value);
+
+
+btnBuscar.addEventListener('input', input)
+
+function input(event){
+
+      event.preventDefault();
+      
+      const descBox = input_search_desc.value
+
+    if(descBox === kitten_1_desc );{
+
     
-    const kitten_1_desc  = `1 Porte elegante, su patrón de color tan característico y sus ojos
-    de un azul intenso, pero su historia se remonta a Asía al menos
-    hace 500 años, donde tuvo su origen muy posiblemente.`;
-     
-    
-    //Completa el código
-    }
     
 
-    if( htmlKitten_2.includes(descrSearchText) ) {
-    //Completa el código
-    }
+   // catlist.innerHTML =  `${kitten_1_name}` + ` ` +`${kitten_1_desc}`+ ` `+ `${kitten_1_race}` ;
     
-    if(htmlKitten_3 .includes(descrSearchText) ) {
-    //Completa el código
+    catlist.innerHTML = htmlKitten_1
+
+
     }
+   
     
+};
+
+
+ 
 
 
 
@@ -35,10 +45,10 @@ if( htmlKitten_1.includes(descrSearchText) ) {
 
                            //gato 1
    //***nombres de la variables = (con su significado )                        
-const kitten_1_name = 'NALA';
+const kitten_1_name ="NALA";
 const kitten_1_image = 'https://dev.adalab.es/gato-siames.webp';
 const kitten_1_race = 'CALLEJERO';
-const kitten_1_desc = `1 Porte elegante, su patrón de color tan característico y sus ojos
+const kitten_1_desc = `Porte elegante, su patrón de color tan característico y sus ojos
 de un azul intenso, pero su historia se remonta a Asía al menos
 hace 500 años, donde tuvo su origen muy posiblemente.`;
 
